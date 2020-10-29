@@ -1,0 +1,731 @@
+
+<!–– SITE DESIGNED BY ZEMNAPH 2020-->
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=.50, shrink-to-fit=yes">
+
+		<meta name="description" content="manifold" />
+		<title>Yeld Finance</title>
+
+		<link rel="icon" href="favicon2.png" />
+<style>
+
+  html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: source;
+  src: url("SourceCodePro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: open;
+  src: url("OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: open-bold;
+  src: url("OpenSans-Regular.ttf") format("truetype");
+}
+
+
+div {
+    border: 0px solid #7B0D21;
+} 
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 740px;
+  height: 4981px;
+  z-index: 0;
+
+}
+
+.bounding {
+  position: relative;
+  top: 0px;
+  left: 0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 740px;
+  height: 4981px;
+  z-index: 3;
+}
+
+.anchor {
+  position: absolute;
+  width:3px;
+  height:3x;
+  left:35px;
+
+}
+
+.top-bar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width:740px;
+  height:35px;
+  z-index:5;
+  font-family: source;
+  font-size: 12pt;
+  text-align: left;
+  background-image: url("1x/top_blue.png");
+  display: flex;
+  align-items:top;
+
+}
+
+
+.info-bar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 36;
+  width:50px;
+  height:100px;
+  z-index:15;
+  font-family: source;
+  font-size: 9pt;
+}
+
+.info-bar-wrapper {
+   position: absolute;
+  top:2717px;
+  left: 625px;
+  width:50px;
+  height:2300px;
+   z-index:15;
+}
+
+.clunk {
+
+}
+
+/*.new-logo {
+
+position: absolute;
+left:100px
+top:320px;*/
+
+
+/*}*/
+
+.splash {
+position: fixed;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+z-index: 100;
+background-image: url("splash_phase.png");
+height:600;
+width: 740;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#disp {
+position:absolute;
+    top: 0px;
+    left: 0px;
+width:740px;
+height:600px;
+font-size:18;
+z-index: -4;
+color:#A5A5A5;
+
+}
+
+/*.spash-logo {
+
+ position: fixed;
+    top: 50%;
+    left: 50%;
+
+}*/
+
+.highlight {
+
+  position: absolute;
+  top: 65px;
+  right: 40px;
+  width: 196px;
+  height: 200px;
+  font-size: 11pt;
+  text-align: right;
+  font-family: source;
+  text-decoration: none;
+
+}
+
+.main_logo {
+  position:absolute;
+  top:160px;
+  left:75px;
+
+
+}
+
+
+.prime_text {
+  position: absolute;
+  top: 425px;
+  left: 370px;
+  width: 196px;
+  height: 575px;
+  font-size: 13pt;
+  text-align: left;
+  font-family: source;
+  background-color:#BCBEC0;
+
+}
+
+.title {
+  position: absolute;
+  top: 223px;
+  left: 339px;
+  width: 400px;
+  height: 56px;
+  font-size: 16pt;
+  text-align: left;
+  font-family: source;
+  background-color:#BCBEC0;
+}
+
+.social-text {
+  position: absolute;
+  top: 1180px;
+  left: 155px;
+  width: 350px;
+  height: 60px;
+  font-size: 13pt;
+  text-align: left;
+  font-family: open-bold;
+
+}
+
+.social-YELDbuttons {
+
+  position: absolute;
+  top: 1180px;
+  left: 410px;
+  width: 350px;
+  height: 60px;
+  font-size: 14pt;
+  text-align: left;
+  font-family: open-bold;
+  z-index:4;
+
+}
+
+.core {
+  position: absolute;
+  top: 1462px;
+  left: 174px;
+  width: 150px;
+  height: 30px;
+  font-size: 17pt;
+  text-align: left;
+  font-family: open-bold;
+}
+
+.feature-head-1 {
+  position: absolute;
+  top: 1570px;
+  left: 87px;
+  width: 395px;
+  height: 65px;
+  font-size: 14pt;
+  text-align: left;
+  font-family: source;
+
+
+}
+
+.feature-body-1 {
+
+  position: absolute;
+  top: 1656px;
+  left: 78px;
+  width: 395px;
+  height: 150px;
+  font-size: 10pt;
+  text-align: left;
+  font-family: open;
+
+
+
+}
+
+.feature-head-2 {
+
+  position: absolute;
+  top: 1854px;
+  left: 87px;
+  width: 400px;
+  height: 65px;
+  font-size: 14pt;
+  text-align: left;
+  font-family: source;
+
+
+}
+
+.feature-body-2 {
+
+  position: absolute;
+  top: 1958px;
+  left: 78px;
+  width: 395px;
+  height: 150px;
+  font-size: 10pt;
+  text-align: left;
+  font-family: open;
+ 
+
+
+}
+
+.feature-head-3 {
+
+  position: absolute;
+  top: 2163px;
+  left: 87px;
+  width: 400px;
+  height: 65px;
+  font-size: 14pt;
+  text-align: left;
+  font-family: source;
+
+
+}
+
+.feature-body-3 {
+
+  position: absolute;
+  top: 2248px;
+  left: 78px;
+  width: 395px;
+  height: 150px;
+  font-size: 10pt;
+  text-align: left;
+  font-family: open;
+
+
+}
+
+.info-head {
+
+  position: absolute;
+  top: 2634px;
+  left: 174px;
+  width: 150px;
+  height: 30px;
+  font-size: 17pt;
+  text-align: left;
+  font-family: open-bold;
+
+}
+
+.info-subhead {
+
+  position: absolute;
+  top: 2768px;
+  left: 333px;
+  width: 240px;
+  height: 103px;
+  font-size: 14pt;
+  text-align: right;
+  font-family: source;
+
+}
+
+.info-body {
+
+  position: absolute;
+  top: 2892px;
+  left: 93px;
+  width: 490px;
+  height: 1930px;
+  font-size: 10pt;
+  text-align: left;
+  font-family: open;
+
+}
+
+.tech-graphics {
+  
+  position: absolute;
+  top: 4200px;
+  left: 330px;
+  width: 400px;
+  height: 500px;
+  font-size: 10pt;
+  text-align: left;
+  font-family: open;
+  z-indez: 11;
+
+}
+
+div.tech-inline {
+
+float:left;
+width: 178px;
+
+}
+
+.clearBoth { clear:both; }
+
+.testing { 
+
+background-color:red;
+height:100;
+width:100;
+
+}
+
+.portal-window {
+
+position: fixed;
+
+  width: 740px;
+  height: 640px;
+  background-color: gray;
+  z-index:150;
+  overflow-x:scroll
+
+}
+
+.portal-window-inside {
+
+  width: 3740px;
+  height: 615px;
+
+}
+
+
+
+</style>
+
+
+
+</head>
+<body style="background-color:#BCBEC0;">
+
+
+
+<script src="matrix.js"></script>
+<script src="sketch.js"></script>
+
+
+<center>
+
+
+<div class="bounding">
+  <!--- SPLASH STUFF -->
+
+
+<pre id="disp" spellcheck="false"></pre>  
+
+<! -- TOP NAV BAR HERE -->
+
+<div class="top-bar">
+<img src="1x/spacer_27w.png"><img src="1x/triangle_w.png"><img src="1x/spacer_62w.png"></img>
+<a href="#home">Home</a> 
+<img src="1x/spacer_35w.png">
+<a href="#core">Core Features</a>
+<img src="1x/spacer_35w.png"> 
+<a href="#info">Info</a>
+<img src="1x/spacer_35w.png"> 
+<a href="#social">Social</a>
+
+</div>
+<div class="clunk">
+</div>
+
+<!-- <div class="splash">
+<video autoplay="autoplay" muted="muted" poster="none">
+    <source src="***" type="video/mp4">
+
+</video>
+</div> -->
+
+<div class="background">
+<img src="background.svg">
+</img>
+</div>
+
+<! -- All ANCHORS HERE -->
+<div class="anchor" style="top:0px">
+<a id="home"></a>
+</div>
+<div class="anchor" style="top:1085px">
+<a id="social"></a>
+</div>
+<div class="anchor" style="top:1340px">
+<a id="core"></a>
+</div>
+<div class="anchor" style="top:2562px">
+<a id="info"></a>
+</div>
+<div class="anchor" style="top:2950px">
+<a id="strategies"></a>
+</div>
+<div class="anchor" style="top:3350px">
+<a id="algorithms"></a>
+</div>
+<div class="anchor" style="top:3770px">
+<a id="retirement"></a>
+</div>
+<div class="anchor" style="top:4140px">
+<a id="technicals"></a>
+</div>
+<div class="anchor" style="top:4475px">
+<a id="codebase"></a>
+</div>
+
+<div class="main_logo">
+
+  <img src="1x/logo_9-20.png" />
+</div>
+
+<!--  <div class="portal-window" id="close-me"> 
+  <iframe src="index.htm"></iframe>
+</div> -->
+
+<!-- HIGHLIGHT DIV, FOR ANNOUNCEMENTS AND IMPORTANT LINKS -->
+
+<div class="highlight">
+<a href="https://uniswap.info/pair/0x164ed0df02b3747315b50b806b79962ad9517578" target="_blank">Yeld x Uniswap</a><br>
+<a href="https://etherscan.io/token/0x468ab3b1f63A1C14b361bC367c3cC92277588Da1" target="_blank">Etherscan</a>
+</div>
+
+
+
+<div class="title">The Evolution in Yield Farming<br> Happens in <b>Yeld Finance</b></font></div>
+
+
+<div class="prime_text">Yeld is based on the Yearn protocol, optimized to take you further.
+<br>
+<br>
+Features a vastly improved yield generation system that rewards YELD token holders even after they have finished staking their stablecoins. 
+<br><br><br>
+Implements the new Buy and Burn system and the exclusive Retirement Yield, among other unseen protocols. 
+<br><br><br>
+See <a href="#info">INFO</a> for more details.</div>
+
+<div class="social-text">
+the conversation on <br>Yeld's Social Media Channels:
+</div>
+
+<div class="social-YELDbuttons">
+  <a href="https://twitter.com/manifoldf" target="_blank">
+    <img src="1x/bird1.png" />
+ </a>
+ <a href="https://discord.gg/FNX8Hc" target="_blank">
+   <img src="1x/discord.png"></img>
+ </a>
+ <a href="https://medium.com/@manifoldmaster" target="_blank">
+  <img src="1x/medium.png"></img>
+</a>
+  <a href="https://t.me/manifoldDiscussion" target="_blank">
+      <img src="1x/telegram.png"></img>
+</a>
+</div>
+
+
+<div class="core">Core Features</div>
+
+<div class="feature-head-1">
+
+Rewarding token holders daily
+even if they aren't staking tokens.
+</div>
+
+<div class="feature-body-1">
+
+Retirement Yield:
+<br><br>
+All token holders that have yield farmed for at least one day will get rewards in our native token just by holding the token, there will be no need to farm the token to have a passive income from YELD. The quantity will be determined based on the current status of the pool reward and on the quantity held
+
+</div>
+
+<div class="feature-head-2">
+
+Advanced algorithms for <br>YELD price increase through <br> Buy and Burn of re-buys.
+
+</div>
+
+<div class="feature-body-2">
+
+Constant Supply Reduction: 
+<br><br>
+
+Through an automated mechanism of re-buying and burning of tokens, YELD tokens will keep on reducing its total supply. As opposed to other yield farming projects, where holders have an interest of not holding the token because the supply is increasing, YELD will award the holders of the token.
+
+</div>
+
+
+
+<div class="feature-head-3">
+
+Farm extra YELD tokens during<br> 
+your standard yield procedure.
+
+</div>
+
+<div class="feature-body-3">
+
+Yield Farming Optimizer: <br><br>
+
+Our Staking Mechanism will constantly monitor the current farming tokens and will optimize for the highest possible performance. Imagine you have been generating a 17% APY on Aave but after the 5th day the rewards have dropped. Our internal algorithm will look at the end of the day for better performance coins in platforms like dYdX, Aave, Uniswap, Compound and Curve.fi. Plus users will be rewarded YELD tokens based on the yield they generate from staking their stablecoins.
+
+</div>
+
+<div class="info-head">
+
+Information
+
+</div>
+
+<div class="info-subhead">
+
+Yeld is a <br>
+deflationary<br>
+yield optimization<br>
+engine,
+designed <br>
+for farmers.
+<br>
+
+</div>
+
+<div class="info-body">
+
+<br><br>
+In traditional yield farming applications the users are rewarded from automatic portfolio rebalancing systems by updating daily each users' assets to buy the highest APY every day. In manifold.finance not only you get the best APY every day but you get rewarded for your YELD token holdings even after you've finished staking.
+
+<br><br><br>
+	<b>Strategies</b>
+<br><br>
+
+You start by depositing as many stablecoins as you want to stake on the system. Suppose on the first day your DAI holdings are generating a 17% APY on Aave. When that APY innevitably drops, say on day 5, your porfolio will be rebalanced by moving those DAI using a Smart Contract to the highest performer of that day which could be Compound or similar exactly at 12am CEST. Initially we will support dYdX, Aave, Uniswap, Compound and Curve.fi. The contract is self-controlling meaning it automatically detects the APY changes and updates users portfolios.
+<br><br>
+Whenever you generate yield from staking your stablecoins, you automatically generate YELD tokens. Daily 100 YELD tokens will be distributed to yield farmers depending on how much profit they have created. This extra YELD farm will last for the initial 100 days. That amount is increased 10x for the first 3 days after the app is live. So if the total daily yield is 60,000 USD worth of stablecoins and your tokens generated 500 USD in yield, you'll get a 0.83% of the 100 YELD distributed daily, 0.83 YELD tokens in a single day. Or 8.3 for the first 3 days.
+
+<br><br><br>
+	<b>Algorithms</b>
+<br><br>
+
+We use a new Buy and Burn algorithm where we split the daily yield generated by users in half to automatically buy ETH and exchange it for YELD tokens on Uniswap. Then, those YELD tokens are burned to reduce the total supply. When that happens, token holders will see an inmediate increase in YELD value to supplement their investments since a smaller supply increases the price.
+<br><br>
+While normal supply reducing systems burn tokens to reduce the supply and wait for the market to self-adjust after several token exchanges, our Buy and Burn system directly updates the price right away since the purchased tokens modify the pair balance ratio on Uniswap. Resulting in a price increase, instantly.
+<br><br>
+The result is an extremely efficient yield economy that rebalances and updates prices minute by minute without requiring user intervention.The most advanced type of yield farming to benefit users above all.
+<br><br>
+A 1% of the total yield is taken and distributed to Retirement Yield farmers, explained below.
+
+<br><br><br>
+	<b>Retirement Yield</b>
+<br><br>
+
+Our largest goal is to reward token holders even after they are done staking and they've extracted their tokens from the dApp. The way we do it is simple: if user A has staked any stablecoins in the dApp for at least 1 day, he'll benefit from a lifetime of rewards paid in ETH. User A will become a Retirement Yield Farmer.
+<br><br>
+How much the user gets depends entirely on his daily holdings. The larger percentage of the total supply you hold, the more you earn every day based on the daily yield profits from the collective farmers. We call this system The Retirement Yield.
+<br><br>
+Compared to traditional yield farming systems, you don't need to lock your tokens permanentely in the system to keep earning. 
+
+<div class="tech-inline">
+You get rewarded for being a holder every day regardless of whether you're staking or not. Furthemore, holders benefit from price increases from our Buy and Burn system.
+	<br><br><br>
+	<b>Technicals</b>
+<br><br>Total supply: <b>60,000 YELD</b><br><br>
+<b>30,000</b> tokens sold on the token sale. 
+<br><br>
+<b>20,000 </b>YELD tokens<br> locked for daily rewards<br> on <a href="https://uniswap.info/pair/0x164ed0df02b3747315b50b806b79962ad9517578" target"_blank">Uniswap.</a><br>
+<br>
+
+The remaining <b>YELD</b> will be made available for governance, development, auditing and other use cases.
+</div> <br class="clearBoth" />
+<br>
+For more information check Yeld's <a href="https://discord.gg/FNX8Hc" target="_blank">Discord</a>
+
+	<br><br><br>
+	<b>Codebase</b>
+<br><br>
+
+Our contracts will be modified from the yearn finance contracts to implement our innovative Buy and Burn system, Retirement Yield algorithm and token redistribution systems. Available once audited to increase your safety. 
+
+</div>
+
+<div class="tech-graphics"><img src="1x/technicals2.png"></img></div>
+
+
+<div class="info-bar-wrapper">
+<div class="info-bar">
+<img src="1x/spacer_27h.png">
+<a href="#strategies">
+Strategies<br>
+<img src="1x/triangle_w.png"><br><br><br></a>
+<a href="#algorithms">
+Algorithms<br>
+<img src="1x/triangle_w.png"><br><br><br></a>
+<a href="#retirement">
+Retirement Yield<br>
+<img src="1x/triangle_w.png"><br><br><br></a>
+<a href="#technicals">
+Technicals<br>
+<img src="1x/triangle_w.png"><br><br><br></a>
+<a href="#codebase">
+Codebase<br>
+<img src="1x/triangle_w.png"><br><br><br>
+</a>
+</div>
+<div class="clunk">
+
+</div>
+
+
+</body>
+
+</div> 
+
+<script src= 'splash.js'></script>
+
+
+
+
+</body>
+<html>
